@@ -1264,6 +1264,10 @@ function oat2dex() {
         export CDEXCONVERTER="$SERASA_ROOT"/prebuilts/tools-serasa/${HOST}-x86/bin/compact_dex_converter
     fi
 
+    if [ -z "$PATCHELF" ]; then
+        export PATCHELF="$SERASA_ROOT"/prebuilts/tools-serasa/${HOST}-x86/bin/patchelf
+    fi
+
     # Extract existing boot.oats to the temp folder
     if [ -z "$ARCHES" ]; then
         echo "Checking if system is odexed and locating boot.oats..."
