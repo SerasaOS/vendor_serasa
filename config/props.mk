@@ -42,3 +42,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # (for devices that check this)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true
+
+# Disable RescueParty
+PRODUCT_PRODUCT_PROPERTIES += \
+        persist.sys.disable_rescue=true
