@@ -116,5 +116,8 @@ include vendor/serasa/config/serasa_audio.mk
 # Include serasaUI
 include vendor/serasaui/config.mk
 
+# Include serasa packages
+include vendor/serasa/config/packages.mk
+
 # Include Version
 include vendor/serasa/config/version.mk
