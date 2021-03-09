@@ -82,7 +82,8 @@ PRODUCT_DEXPREOPT_QUICKEN_APPS += \
 
 # serasa Gapps Permissions
 PRODUCT_COPY_FILES += \
-    vendor/serasa/config/permissions/xd.serasa_gapps.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/sr.serasa_gapps.xml
+    vendor/serasa/config/permissions/sr.serasa_gapps.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/sr.serasa_gapps.xml \
+	vendor/serasa/config/permissions/sr.serasa_gapps.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/sr.serasa_gapps.xml
 
 # Do not preoptimize prebuilts when building GApps
 DONT_DEXPREOPT_PREBUILTS := true
