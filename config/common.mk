@@ -80,6 +80,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEXPREOPT_QUICKEN_APPS += \
     Dialer
 
+# serasa Gapps Permissions
+PRODUCT_COPY_FILES += \
+    vendor/serasa/config/permissions/xd.serasa_gapps.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/sr.serasa_gapps.xml
+
 # Do not preoptimize prebuilts when building GApps
 DONT_DEXPREOPT_PREBUILTS := true
 
@@ -118,6 +122,9 @@ include vendor/serasaui/config.mk
 
 # Include serasa packages
 include vendor/serasa/config/packages.mk
+
+# Include serasa gapps
+include vendor/google/gms/config.mk
 
 # Include common props
 include vendor/serasa/config/props.mk
