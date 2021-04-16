@@ -126,6 +126,7 @@ include vendor/serasa/config/packages.mk
 
 # Include serasa gapps
 include vendor/google/gms/config.mk
+include vendor/google/pixel/config.mk
 
 # Include common props
 include vendor/serasa/config/props.mk
