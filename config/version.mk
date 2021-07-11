@@ -23,11 +23,13 @@ ifndef SERASA_BUILD_TYPE
 endif
 
 SERASA_VERSION := rev1.0
+SERASA_CODENAME := Milikita
 SERASA_BUILD_VERSION := serasa-$(SERASA_VERSION)-$(SERASA_BUILD)-$(SERASA_HOST_TIME)-$(SERASA_BUILD_TYPE)
 SERASA_BUILD_NUMBER := sr_$(SERASA_VERSION).$(SERASA_HOST_TIME)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.serasa.version=$(SERASA_VERSION) \
+   ro.serasa.codename=$(SERASA_CODENAME) \
    ro.serasa.build.version=$(SERASA_BUILD_VERSION) \
    ro.serasa.build.number=$(SERASA_BUILD_NUMBER) \
    ro.serasa.build.type=$(SERASA_BUILD_TYPE) \
