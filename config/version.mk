@@ -17,6 +17,9 @@
 #
 
 SERASA_HOST_TIME := $(shell date +"%Y%m%d-%H%M")
+SERASA_BUILD_DATE := $(shell date -u +%Y%m%d)
+SERASA_BUILD_TIME := $(shell date -u +%H%M)
+SERASA_BUILD_DATE_TIME := $(SERASA_BUILD_TIME)$(SERASA_BUILD_DATE)
 
 ifndef SERASA_BUILD_TYPE
    SERASA_BUILD_TYPE := UNOFFICIAL
@@ -34,4 +37,5 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.serasa.build.version=$(SERASA_BUILD_VERSION) \
    ro.serasa.build.number=$(SERASA_BUILD_NUMBER) \
    ro.serasa.build.type=$(SERASA_BUILD_TYPE) \
+   ro.build.datetime=$(SERASA_BUILD_DATE_TIME) \
    ro.caf.revision.tag=$(CAF_REVISION_TAG)
