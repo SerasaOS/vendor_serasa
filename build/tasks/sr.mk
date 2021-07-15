@@ -17,8 +17,8 @@
 serasa_TARGET_PACKAGE := $(PRODUCT_OUT)/$(serasa_BUILD_VERSION).zip
 MD5 := prebuilts/build-tools/path/$(HOST_OS)-x86/md5sum
 
-.PHONY: carthage
-carthage: $(INTERNAL_OTA_PACKAGE_TARGET)
+.PHONY: sr
+sr: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(SERASA_TARGET_PACKAGE)
 	$(hide) $(MD5) $(SERASA_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(SERASA_TARGET_PACKAGE).md5sum
 	@echo "Done"
