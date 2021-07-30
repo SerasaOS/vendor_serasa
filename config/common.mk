@@ -25,6 +25,11 @@ include vendor/serasa/config/sr_packages.mk
 # sr. props
 include vendor/serasa/config/sr_props.mk
 
+# sr. permissions
+PRODUCT_COPY_FILES += \
+    vendor/serasa/config/permissions/sr_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/sr_permissions_system.xml \
+    vendor/serasa/config/permissions/sr_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/sr_permissions_system-ext.xml
+
 # sr. serasaUI
 include vendor/serasaui/config.mk
 
@@ -95,11 +100,6 @@ PRODUCT_COPY_FILES += \
 # Use default filter for problematic apps.
 PRODUCT_DEXPREOPT_QUICKEN_APPS += \
     Dialer
-
-# serasa Gapps Permissions
-PRODUCT_COPY_FILES += \
-    vendor/serasa/config/permissions/sr.serasa_gapps.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/sr.serasa_gapps.xml \
-	vendor/serasa/config/permissions/sr.serasa_gapps.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/sr.serasa_gapps.xml
 
 # Do not preoptimize prebuilts when building GApps
 DONT_DEXPREOPT_PREBUILTS := true
