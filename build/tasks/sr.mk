@@ -21,10 +21,10 @@ MD5 := prebuilts/build-tools/path/$(HOST_OS)-x86/md5sum
 sr: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(SERASA_TARGET_PACKAGE)
 	$(hide) $(MD5) $(SERASA_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(SERASA_TARGET_PACKAGE).md5sum
+	$(hide) ./vendor/serasa/tools/generate_json_build_info.sh $(SERASA_TARGET_PACKAGE)
 	@echo "Done"
-	@echo -e "\t ===============================-Package complete-============================================================="
+	@echo -e "\t ===============================-Package complete-========================================="
 	@echo -e "\t Zip: $(SERASA_TARGET_PACKAGE)"
-	@echo -e "\t MD5: `cat $(SERASA_TARGET_PACKAGE).md5sum | awk '{print $$1}' `"
 	@echo -e "\t Size: `du -sh $(SERASA_TARGET_PACKAGE) | awk '{print $$1}' `"
-	@echo -e "\t SerasaCLO - Keep Minimalist"
-	@echo -e "\t =============================================================================================================="
+	@echo -e "\t serasa | #minimalistEra | xdroid thanks you"
+	@echo -e "\t =========================================================================================="
