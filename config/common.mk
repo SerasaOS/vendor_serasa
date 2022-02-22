@@ -212,6 +212,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/serasa/build/target/product/security/serasa
 
+# AdBlock
+PRODUCT_PACKAGES += \
+    hosts.serasa_adblock
+
 include vendor/serasa/config/version.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
