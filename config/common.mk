@@ -217,7 +217,8 @@ PRODUCT_PACKAGES += \
     GameSpace \
     OmniJaws \
     ParallelSpace \
-    SerasaWallpaperStub
+    SerasaWallpaperStub \
+    SettingsIntelligenceGooglePrebuilt
 
 # FaceUnlock
 ifneq ($(TARGET_FACE_UNLOCK_OPTOUT), true)
