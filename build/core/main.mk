@@ -1,2 +1,2 @@
-# Include LineageOS versions
-include $(TOPDIR)vendor/lineage/build/core/main_version.mk
+# Include SerasaOS versions
+include $(TOPDIR)vendor/serasa/build/core/main_version.mk

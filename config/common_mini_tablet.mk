@@ -1,10 +1,10 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 
-# Inherit mini common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mini.mk)
+# Inherit mini common Serasa stuff
+$(call inherit-product, vendor/serasa/config/common_mini.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME
 
-$(call inherit-product, vendor/lineage/config/telephony.mk)
+$(call inherit-product, vendor/serasa/config/telephony.mk)

@@ -4,17 +4,15 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# LineageOS System Version
+# Serasa Platform Display Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
-
-# LineageOS Platform Display Version
-ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
+    ro.serasa.display.version=$(SERASA_DISPLAY_VERSION) \
+    ro.serasa.build.version=$(SERASA_BUILD_VERSION) \
+    ro.serasa.build.date=$(BUILD_DATE) \
+    ro.serasa.buildtype=$(SERASA_BUILD_TYPE) \
+    ro.serasa.fingerprint=$(ROM_FINGERPRINT) \
+    ro.serasa.version=$(SERASA_VERSION) \
+    ro.modversion=$(SERASA_VERSION)
 
 # LineageOS Platform SDK Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
