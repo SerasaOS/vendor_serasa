@@ -251,6 +251,7 @@ PRODUCT_PACKAGES += \
 
 # Extra Packages
 PRODUCT_PACKAGES += \
+    GameSpace \
     SerasaWallpaperStub
 
 # Pixel customization
