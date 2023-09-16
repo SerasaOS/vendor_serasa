@@ -16,6 +16,22 @@
 # limitations under the License.
 #
 
+# sr. version
+include vendor/serasa/config/sr_version.mk
+
+# sr. packages
+include vendor/serasa/config/sr_packages.mk
+
+# sr. props
+include vendor/serasa/config/sr_props.mk
+
+# sr. serasaUI
+include vendor/serasaui/config.mk
+
+# sr. gapps
+include vendor/google/gms/config.mk
+include vendor/google/pixel/config.mk
+
 # ART
 # Optimize everything for preopt
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
@@ -114,19 +130,6 @@ endif
 
 # Include AOSP audio files
 include vendor/serasa/config/aosp_audio.mk
-
-# Include serasa audio files
-include vendor/serasa/config/serasa_audio.mk
-
-# Include serasaUI
-include vendor/serasaui/config.mk
-
-# Include serasa packages
-include vendor/serasa/config/packages.mk
-
-# Include serasa gapps
-include vendor/google/gms/config.mk
-include vendor/google/pixel/config.mk
 
 # Include common props
 include vendor/serasa/config/props.mk
