@@ -252,6 +252,8 @@ PRODUCT_PACKAGES += \
 # Extra Packages
 PRODUCT_PACKAGES += \
     GameSpace \
+    OmniJaws \
+    ParallelSpace \
     SerasaWallpaperStub
 
 # FaceUnlock
