@@ -218,7 +218,6 @@ PRODUCT_PACKAGES += \
     GameSpace \
     OmniJaws \
     ParallelSpace \
-    SerasaWallpaperStub \
     SettingsIntelligenceGooglePrebuilt
 
 # FaceUnlock
