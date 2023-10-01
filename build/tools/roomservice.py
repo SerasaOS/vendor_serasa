@@ -125,7 +125,7 @@ def get_manifest_path():
         return ".repo/manifests/{}".format(m.find("include").get("name"))
 
 def get_default_revision():
-    return "pyro"
+    return "13"
 
 def get_from_manifest(devicename):
     for path in glob.glob(".repo/local_manifests/*.xml"):
