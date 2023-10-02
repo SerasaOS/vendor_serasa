@@ -37,16 +37,16 @@ serasa: otapackage
 	@echo -e ""
 	@echo -e "${cya}Building ${bldcya}Serasa! ${txtrst}";
 	@echo -e ""
-	@echo -e ${CL_YLW}"                                                                 "
-	@echo -e ${CL_YLW}"                                                                 "
-	@echo -e ${CL_YLW}"       _         _         _           _         _         _     "
-	@echo -e ${CL_YLW}"      /\\__   __/\\___   _/\\___    __/\\__     /\\__   __/\\__  "
-	@echo -e ${CL_YLW}"     /    \\ (_  ____)) (_   _  )) (_  ____)   /    \\ (_  ____) "
-	@echo -e ${CL_YLW}"    _\  \_//  /  ._))    /  |))//   /  _ \\   _\  \_//  /  _ \\  "
-	@echo -e ${CL_YLW}"   // \:.\   /:. ||___  /:.    \\  /:./_\ \\ // \:.\   /:./_\ \\ "
-	@echo -e ${CL_YLW}"   \\__  /   \  _____)) \___|  //  \  _   // \\__  /   \  _   // "
-	@echo -e ${CL_YLW}"      \\/     \//            \//    \// \//     \\/     \// \//  "
-	@echo -e ${CL_GRN}"----- Happy Flashing! -----"
+	@echo -e ${CL_YLW}"     ██████ ▓█████  ██▀███   ▄▄▄        ██████  ▄▄▄         "${CL_YLW}
+	@echo -e ${CL_YLW}"   ▒██    ▒ ▓█   ▀ ▓██ ▒ ██▒▒████▄    ▒██    ▒ ▒████▄       "${CL_YLW}
+	@echo -e ${CL_YLW}"   ░ ▓██▄   ▒███   ▓██ ░▄█ ▒▒██  ▀█▄  ░ ▓██▄   ▒██  ▀█▄     "${CL_YLW}
+	@echo -e ${CL_YLW}"     ▒   ██▒▒▓█  ▄ ▒██▀▀█▄  ░██▄▄▄▄██   ▒   ██▒░██▄▄▄▄██    "${CL_YLW}
+	@echo -e ${CL_YLW}"   ▒██████▒▒░▒████▒░██▓ ▒██▒ ▓█   ▓██▒▒██████▒▒ ▓█   ▓██▒   "${CL_YLW}
+	@echo -e ${CL_YLW}"   ▒ ▒▓▒ ▒ ░░░ ▒░ ░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░ ▒▒   ▓▒█░   "${CL_YLW}
+	@echo -e ${CL_YLW}"   ░ ░▒  ░ ░ ░ ░  ░  ░▒ ░ ▒░  ▒   ▒▒ ░░ ░▒  ░ ░  ▒   ▒▒ ░   "${CL_YLW}
+	@echo -e ${CL_YLW}"   ░  ░  ░     ░     ░░   ░   ░   ▒   ░  ░  ░    ░   ▒      "${CL_YLW}
+	@echo -e ${CL_YLW}"         ░     ░  ░   ░           ░  ░      ░        ░  ░   "${CL_YLW}
+	@echo -e ${CL_YLW}"                   Choice Of Spices!                        "${CL_YLW}
 	@echo -e ""
 	@echo -e "zip: "$(SERASA_TARGET_PACKAGE)
 	@echo -e "sha256: `cat $(SERASA_TARGET_PACKAGE).sha256sum | cut -d ' ' -f 1`"
