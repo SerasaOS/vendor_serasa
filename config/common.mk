@@ -246,6 +246,12 @@ TARGET_INCLUDE_LIVE_WALLPAPERS ?= false
 PRODUCT_PACKAGES += \
     hosts.serasa_adblock
 
+# Translations
+CUSTOM_LOCALES += \
+    ast_ES \
+    gd_GB \
+    cy_GB
+
 # Quick Tap
 ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
 PRODUCT_COPY_FILES += \
